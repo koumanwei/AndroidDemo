@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="com.koumanwei.androiddemo.mvp.view.LoginActivity">
+    tools:context=".mvp.login.view.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

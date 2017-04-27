@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.LinearLayout;
 
 import com.koumanwei.androiddemo.R;
-import com.koumanwei.androiddemo.mvp.news.adapter.RecyclerAdapter;
+import com.koumanwei.androiddemo.mvp.news.adapter.NewsAdapter;
 import com.koumanwei.androiddemo.mvp.news.bean.NewsBean;
 import com.koumanwei.androiddemo.mvp.news.presenter.NewsPresenter;
 import com.koumanwei.androiddemo.mvp.news.presenter.NewsPresenterImpl;
@@ -43,6 +43,6 @@ public class NewsActivity extends AppCompatActivity implements NewsView {
         // 显示来自Model的数据
         rvNews.setLayoutManager(new LinearLayoutManager(this));
         rvNews.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
-        rvNews.setAdapter(new RecyclerAdapter(this, news));
+        rvNews.setAdapter(new NewsAdapter(this, news));
     }
 }

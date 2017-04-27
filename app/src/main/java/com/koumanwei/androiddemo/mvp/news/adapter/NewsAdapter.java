@@ -23,11 +23,11 @@ import butterknife.ButterKnife;
  * @version 1.0
  */
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.NewsViewHolder> {
+public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder> {
     private Context context;
     private List<NewsBean> dataList;
 
-    public RecyclerAdapter(Context context, List<NewsBean> dataList) {
+    public NewsAdapter(Context context, List<NewsBean> dataList) {
         this.context = context;
         this.dataList = dataList;
     }
